@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import bgImage from './assets/bg.jpg';
+
 
 // Common Progress Circle Component
 const ProgressCircle = ({ progress, size = 60, strokeWidth = 5, color = "stroke-cyan-300" }) => {
@@ -238,11 +238,11 @@ export default function App() {
   const overallProgress = totalTopics === 0 ? 0 : Math.round((totalCompleted / totalTopics) * 100);
 
   return (
-    <div className="min-h-screen bg-slate-950 p-6 md:p-10 font-sans selection:bg-emerald-500/30" style={{
-      backgroundImage: `url(${bgImage})`,
-      backgroundSize: 'cover',
-      backgroundAttachment: 'fixed'
-    }}>
+  <div className="min-h-screen bg-slate-950 p-6 md:p-10 font-sans selection:bg-emerald-500/30" style={{
+    backgroundImage: 'url("https://wallpapers.com/images/featured/aesthetic-computer-4k-c9qdhe02pr84wh3a.jpg")', 
+    backgroundSize: 'cover',
+    backgroundAttachment: 'fixed'
+  }}>
       
       {/* Header Panel */}
       <div className="max-w-7xl mx-auto mb-10 flex flex-col md:flex-row items-start md:items-center justify-between bg-black/40 backdrop-blur-xl border border-white/10 rounded-2xl p-8 shadow-2xl relative overflow-hidden gap-6">
